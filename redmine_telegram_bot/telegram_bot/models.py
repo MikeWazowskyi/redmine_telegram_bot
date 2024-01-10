@@ -14,7 +14,7 @@ class ActiveManager(models.Manager):
 
 class Chat(models.Model):
     name = models.CharField(max_length=150, default='Default Chat')
-    chat_id = models.IntegerField(unique=True)
+    chat_id = models.BigIntegerField(unique=True)
     is_active = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
     groups = models.ManyToManyField(RedmineGroup,
