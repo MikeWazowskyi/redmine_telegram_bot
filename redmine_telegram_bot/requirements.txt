@@ -1,4 +1,4 @@
-Django==3.2.18
+Django==3.2.20
 python-telegram-bot==13.11
 celery==5.2.6
 redis==4.3.4
